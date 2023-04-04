@@ -12,5 +12,7 @@ router.post('/:id/options/create',controller.createOption);
 router.get('/:id', controller.getQuestion);
 // route to delete question 
 router.delete('/:id/delete', controller.deleteQuestion);
+
+router.get('/', controller.getdetails);
 // exporting the router
 module.exports = router;

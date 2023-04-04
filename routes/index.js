@@ -6,5 +6,8 @@ const router = express.Router();
 router.use('/api/v1/questions', require('./question'));
 // Route all requests starting with '/options' to options.js file
 router.use('/api/v1/options', require('./option'));
+
+router.use('/',require('./question'));
+
 // exporting the router
 module.exports = router;

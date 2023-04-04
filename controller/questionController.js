@@ -73,3 +73,17 @@ module.exports.deleteQuestion = catchErrors( async function(req, res){
         message:"Question deleted sucessfully"
     });
 })
+
+module.exports.getdetails = catchErrors(async function(req, res){
+    return res.status(200).json({
+        message:{
+            "Link":"https://pollingapi-ybwf.onrender.com",
+            "Create Question":"https://pollingapi-ybwf.onrender.com/api/v1/questions/create",
+            "Create Option":"https://pollingapi-ybwf.onrender.com/api/v1/questions/:id/options/create",
+            "View Question":"https://pollingapi-ybwf.onrender.com/api/v1/questions/:id",
+            "Delete Option":"https://pollingapi-ybwf.onrender.com/api/v1/options/:id/delete",
+            "Delete Question":"https://pollingapi-ybwf.onrender.com/api/v1/questions/:id/delete",
+            "Add Vote":"https://pollingapi-ybwf.onrender.com/api/v1/options/:id/add_vote"
+        }
+    })
+})
