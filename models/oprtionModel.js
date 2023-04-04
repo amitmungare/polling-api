@@ -1,5 +1,7 @@
+// require mongoose 
 const mongoose = require('mongoose');
 
+// option schema wait content, question, vote, link to vote 
 const option_schema = new mongoose.Schema(
     {
         content:{

@@ -1,5 +1,6 @@
+// require mongoose 
 const mongoose = require('mongoose');
-
+// question schema with content and array of options 
 const question_schema = new mongoose.Schema(
     {
         content:{
